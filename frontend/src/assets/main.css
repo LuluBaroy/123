@@ -1,0 +1,43 @@
+@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  background-image: url("../assets/img/background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: normal;
+}
+a{
+  color:black !important;
+}
+a,
+.green {
+  text-decoration: none;
+}
+
+@media (hover: hover) {
+
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
